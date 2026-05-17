@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch App</title>
+    <style>
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #1e3a8a;
+        }
+
+        .nav-container {
+            margin: 50 auto;
+            box-sizing: border-box;
+            background-color: #66a6ff;
+            position: fixed;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            padding: 20px ;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(120deg, #89f7fe, #66a6ff);
+            margin: 0;
+        }
+
+        .stopwatch {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        #display {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            min-width: 350px;
+            text-align: center;
+        }
+
+        .buttons button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        #start { background: #4CAF50; color: white; }
+        #pause { background: #FF9800; color: white; }
+        #reset { background: #F44336; color: white; }
+
+        .buttons button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+        <img src="logo.jpg" alt="Logo" style="height: 80px; vertical-align: middle;"> 
+        StopWatch Web App
+    </a>
+  </div>
+
+    <div class="stopwatch">
+        <h1 id="display">00:00:00:00</h1>
+        <div class="buttons">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+
+<script src="2jstask.js"></script>
+</body>
+</html>
