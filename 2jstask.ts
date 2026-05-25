@@ -1,3 +1,4 @@
+export{};
 let timer: number | undefined; 
 let totalMS: number = 0;
 let running: boolean = false;
