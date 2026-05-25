@@ -61,6 +61,31 @@
         #start { background: #4CAF50; color: white; }
         #pause { background: #FF9800; color: white; }
         #reset { background: #F44336; color: white; }
+        #lap   { background: #66a6ff; color: white; }
+
+        #laps-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+            max-height: 40px; 
+            overflow-y: auto; 
+            border-top: 1px solid #ddd;
+        }
+
+        #laps-list li {
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+
+        #laps-list li span {
+            font-family: monospace;
+            font-weight: bold;
+        }
 
         .buttons button:hover {
             opacity: 0.8;
@@ -80,11 +105,12 @@
         <h1 id="display">00:00:00:00</h1>
         <div class="buttons">
             <button id="start">Start</button>
+            <button id="lap">Lap</button> 
             <button id="pause">Pause</button>
             <button id="reset">Reset</button>
         </div>
+        <ul id="laps-list"></ul>
     </div>
-
 <script src="2jstask.js"></script>
 </body>
 </html>
